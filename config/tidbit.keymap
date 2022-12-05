@@ -27,7 +27,7 @@
 						&kp LG(BSPC)  	&kp E 		&kp LALT
 				&none	 	&kp LS(LG(Z)) 	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
-				&none 		&kp LG(Z) 	&kp LG(O)	&kp LG(U)
+				&none 		&kp LG(Z) 	&kp LG(0)	&kp LG(U)
 				&none          	&kp S 		&kp V      	&kp LCMD
 			>;
 

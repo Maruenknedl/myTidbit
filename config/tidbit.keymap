@@ -24,14 +24,14 @@
 		
 		default_layer {
 			bindings = <
-						&kp LG(BSPC)  	&kp E 		&kp LSHFT
-				&none	 	&kp LS(LG(Z)) 	&kp B 		&kp X
+						&kp LG(BSPC)  	&kp E 		&kp LALT
+				&none	 	&mt LS(LG(Z)) 	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
-				&none 		&kp LG(Z) 	&kp LG(O)	&kp LG(U)
+				&none 		&mt LG(Z) 	&kp LG(O)	&kp LG(U)
 				&none          	&kp S 		&kp V      	&kp LCMD
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp kp_RBKT kp_LBKT>;
 		};
 
 		 func_layer {

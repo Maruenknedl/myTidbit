@@ -31,7 +31,7 @@
 				&none          	&kp S 		&kp V      	&kp LCMD
 			>;
 
-			sensor-bindings = <&inc_dec_kp RALT(9) RALT(8)>;
+			sensor-bindings = <&inc_dec_kp RA(9) RA(8)>;
 		};
 
 		 func_layer {

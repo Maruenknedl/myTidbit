@@ -59,7 +59,7 @@
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
-				&none          	&kp M 		&kpC V     	&kp LCMD
+				&none          	&kp M 		&kp V     	&kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;

@@ -25,9 +25,9 @@
 		affinity_layer {
 			bindings = <
 						&kp LS(LG(Z))  	&kp E 		&kp I
-				&none	 	&kp LG(Z) 	&kp B 		&kp 
-				&none 		&kp  		&kp P		&kp 
-				&none 		&kp T	 	&kp A		&kp 
+				&none	 	&kp LG(Z) 	&kp B 		&kp B
+				&none 		&kp B 		&kp P		&kp B
+				&none 		&kp T	 	&kp A		&kp B
 				&none          	&kp M 		&kp V      	&kp LCMD
 			>;
 

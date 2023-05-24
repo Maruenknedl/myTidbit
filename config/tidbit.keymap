@@ -13,6 +13,11 @@
 	status = "okay";
 };
 
+# define PROC 0
+# define AFFIN 1
+
+#define NONE 0
+
 / {
 	sensors {
 		compatible = "zmk,keymap-sensors";
@@ -25,10 +30,10 @@
 		affinity_layer {
 			bindings = <
 						&kp LS(LG(Z))  	&kp E 		&kp I
-				&none	 	&kp LG(Z) 	&kp B 		&kp B
-				&none 		&kp B 		&kp P		&kp B
-				&none 		&kp T	 	&kp A		&kp B
-				&none          	&kp M 		&kp V      	&kp LCMD
+				&none	 	&kp LG(Z) 	&kp B 		&none
+				&none 		&none 		&kp P		&none
+				&none 		&kp T		&lt AFFIN  A	&none
+				&none          	&kp M 		&lt PROC V     	&kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -39,23 +44,11 @@
 						&kp LS(LG(Z)) 	&kp E 		&kp LALT
 				&none	 	&kp LG(Z)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
-				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
-				&none          	&kp LG(0) 	&kp V      	&kp LCMD
+				&none 		&kp LG(BSPC) 	&lt AFFIN S	&kp LG(U)
+				&none          	&kp LG(0) 	&lt PROC V      &kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
-
-		 func_layer {
-			 bindings = <
-						&none           &reset          &bootloader
-				&out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
-				&bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
-				&bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &tog 0
-				&kp C_MUTE      &none           &none           &none
-			 >;
-
-			 sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-		 };
 	};
 };

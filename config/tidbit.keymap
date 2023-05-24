@@ -19,21 +19,7 @@
 
 #define NONE 0
 
-/ {
-	 combos {
-		compatible = "zmk,combos";
-		combo_tolayer0 {
-		    timeout-ms = <50>;
-		    key-positions = <0 1>;
-		    bindings = <&to PROC>;
-		};
-		combo_tolayer1 {
-		    timeout-ms = <50>;
-		    key-positions = <2 12>;
-		    bindings = <&to AFFIN>;
-		};
-	    };
-	    
+/ {	    
 	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&encoder_1_top_row>;
@@ -48,7 +34,7 @@
 				&none	 	&kp LG(Z)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
 				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
-				&none          	&kp LG(O) 	&kp V     	&kp LCMD
+				&none          	&to 1		&kp V     	&kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -60,7 +46,7 @@
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
-				&none          	&kp M 		&lt AFFINI  V   &kp LCMD
+				&none          	&to 0 		&lt AFFINI  V   &kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;

@@ -16,7 +16,7 @@
 # define PROC 0
 # define AFFIN 1
 
-#define NONE 0
+# define NONE 0
 
 / {
 	sensors {
@@ -27,19 +27,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 		
-		affinity_layer {
-			bindings = <
-						&kp LS(LG(Z))  	&kp E 		&kp I
-				&none	 	&kp LG(Z) 	&kp B 		&none
-				&none 		&none 		&kp P		&none
-				&none 		&kp T		&lt AFFIN  A	&none
-				&none          	&kp M 		&lt PROC V     	&kp LCMD
-			>;
-
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
-		};
-		
-		procreate_layer {
+		proc_layer {
 			bindings = <
 						&kp LS(LG(Z)) 	&kp E 		&kp LALT
 				&none	 	&kp LG(Z)  	&kp B 		&kp X
@@ -50,5 +38,19 @@
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
+		
+		affin_layer {
+			bindings = <
+						&kp LS(LG(Z))  	&kp E 		&kp I
+				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
+				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
+				&none 		&kp T		&lt AFFIN  A	&none
+				&none          	&kp M 		&lt PROC V     	&kp LCMD
+			>;
+
+			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+		};
+		
+
 	};
 };

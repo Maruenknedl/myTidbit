@@ -22,7 +22,7 @@
 
 #define NONE 0
 
-{	    
+/ {	    
 	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&encoder_1_top_row>;

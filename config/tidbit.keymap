@@ -16,9 +16,8 @@
 #define SWITCH 0
 #define PROC 1
 #define AFFINITY 2
-#define AFFIN 3
-#define RHINO 4
-#define RHIN 5
+#define RHINO 3
+#define RHIN 4
 
 #define NONE 0
 
@@ -62,17 +61,6 @@
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
 				&none          	&lt SWITCH	&none    	&mo AFFIN
-			>;
-
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
-		};
-		affin_layer {
-			bindings = <
-						&none	  	&none	 	&LC(J)
-				&none	 	&none	 	&none		&LC(V)
-				&none 		&none 		&none		&LC(C)
-				&none 		&none		&kp M 		&LC(X)
-				&none          	&none		&kp V     	&none	
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;

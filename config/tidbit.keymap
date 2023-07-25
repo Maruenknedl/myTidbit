@@ -16,9 +16,9 @@
 #define SWITCH 0
 #define PROC 1
 #define AFFIN 2
-#define AFFI 3
+#define A 3
 #define RHINO 4
-#define RHIN 5
+#define R 5
 
 #define NONE 0
 
@@ -61,12 +61,12 @@
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
-				&none          	&lt SWITCH	&none    	&mo AFFI
+				&none          	&lt SWITCH	&none    	&mo 3
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
-		affi_layer {
+		a_layer {
 			bindings = <
 						&none	  	&none	 	&LC(J)
 				&none	 	&none	 	&none		&LC(V)
@@ -84,12 +84,12 @@
 				&none	 	&kp LG(Z)  	&LC(T)		&none	
 				&none 		&LC(E)		&LC(M)		&kp LALT	
 				&none 		&LC(J)	 	&LC(LA(E))	&kp LSHFT
-				&none          	&lt SWITCH ESC	&LC(P)     	&mo RHIN
+				&none          	&lt SWITCH ESC	&LC(P)     	&mo 5
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
-		rhin_layer {
+		r_layer {
 			bindings = <
 						&none		&LC(2)		&LC(D)
 				&none	 	&none	 	&LC(1)		&LC(V)

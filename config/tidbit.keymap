@@ -22,7 +22,7 @@
 
 #define NONE 0
 
-/ {	    
+{	    
 	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&encoder_1_top_row>;
@@ -61,7 +61,7 @@
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
-				&none          	&lt SWITCH	&none    	&mo 3
+				&none          	&lt SWITCH	&none    	&mo AFFIN
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -84,7 +84,7 @@
 				&none	 	&kp LG(Z)  	&LC(T)		&none	
 				&none 		&LC(E)		&LC(M)		&kp LALT	
 				&none 		&LC(J)	 	&LC(LA(E))	&kp LSHFT
-				&none          	&lt SWITCH ESC	&LC(P)     	&mo 5
+				&none          	&lt SWITCH ESC	&LC(P)     	&mo RHIN
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;

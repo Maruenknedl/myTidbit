@@ -17,7 +17,6 @@
 #define AFFIN 1
 #define AFFINI 2
 #define RHINO 3
-#define RHIN 4
 
 #define NONE 0
 
@@ -71,18 +70,7 @@
 				&none	 	&kp LG(Z)  	&LC(T)		&none	
 				&none 		&LC(E)		&LC(M)		&kp LALT	
 				&none 		&LC(J)	 	&LC(LA(E))	&kp LSHFT
-				&none          	&kp ESC		&LC(P)     	&mo RHIN
-			>;
-
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
-		};
-		rhin_layer {
-			bindings = <
-						&none		&LC(2)		&LC(D)
-				&none	 	&none	 	&LC(1)		&LC(V)
-				&none 		&LC(LS(G)) 	&kp F2		&LC(C)
-				&none 		&LC(G) 		&LC(O)		&LC(X)
-				&none          	&kp ESC		&LC(LS(A))    	&none	
+				&none          	&kp ESC		&LC(P)     	&none
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;

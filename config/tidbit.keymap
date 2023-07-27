@@ -13,9 +13,12 @@
 	status = "okay";
 };
 
-#define PROC 0
-#define AFFIN 1
-#define RHINO 2
+#define SWITCH 0
+#define PROC 1
+#define AFFINITY 2
+#define AFFIN 3
+#define RHINO 4
+#define RHIN 5
 
 #define NONE 0
 
@@ -27,39 +30,76 @@
 
 	keymap {
 		compatible = "zmk,keymap";
-		
+
+		switch_layer {
+			bindings = <
+						&none	 	&none 		&none
+				&none	 	&to 4 		&none 		&none
+				&none 		&to 2		&none		&none
+				&none 		&to 1		&none		&none
+				&none          	&lt SWITCH	&none     	&none
+			>;
+
+			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+		};
+
 		proc_layer {
 			bindings = <
 						&kp LS(LG(Z)) 	&kp E 		&kp LALT
 				&none	 	&kp LG(Z)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
 				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
-				&none          	&to 1		&kp V     	&kp LCMD
+				&none          	&lt SWITCH	&kp V     	&kp LCMD
+			>;
+
+			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+		};
+		
+		affinity_layer {
+			bindings = <
+						&kp LS(LG(Z))  	&kp E 		&kp I
+				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
+				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
+				&none 		&kp T		&kp A		&none
+				&none          	&lt SWITCH	&none    	&mo AFFIN
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
 		affin_layer {
 			bindings = <
-						&kp LS(LG(Z))  	&kp E 		&kp I
-				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
-				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
-				&none 		&kp T		&kp A		&none
-				&none          	&to 0 		&none		&kp LCMD
+						&none	  	&none	 	&kp LC(J)
+				&none	 	&none	 	&none		&kp LC(V)
+				&none 		&none 		&none		&kp LC(C)
+				&none 		&none		&kp M 		&kp LC(X)
+				&none          	&none		&kp V     	&none	
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
+
 		rhino_layer {
 			bindings = <
 						&kp LG(Y)	&kp LC(U)	&kp LC(0)	
 				&none	 	&kp LG(Z)  	&kp LC(T)	&none	
 				&none 		&kp LC(E)	&kp LC(M)	&kp LALT	
 				&none 		&kp LC(J)	&kp LC(LA(E))	&kp LSHFT
-				&none          	&kp ESC		&kp LC(P)     	&none
+				&none          	&lt SWITCH ESC	&kp LC(P)     	&mo RHIN
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
+		rhin_layer {
+			bindings = <
+						&none		&kp LC(2)	&kp LC(D)
+				&none	 	&none	 	&kp LC(1)	&kp LC(V)
+				&none 		&kp LC(LS(G)) 	&kp F2		&kp LC(C)
+				&none 		&kp LC(G) 	&kp LC(O)	&kp LC(X)
+				&none          	&kp ESC		&kp LC(LS(A))   &none	
+			>;
+
+			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+		};
+
 	};
 };

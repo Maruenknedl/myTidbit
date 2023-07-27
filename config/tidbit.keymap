@@ -49,7 +49,7 @@
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
-				&none          	&lt SWITCH ESC	&none    	&mo AFFIN
+				&none          	&lt SWITCH ESC	&kp V    	&mo AFFIN
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -59,8 +59,8 @@
 						&none	  	&none	 	&kp LC(J)
 				&none	 	&none	 	&none		&kp LC(V)
 				&none 		&none 		&none		&kp LC(C)
-				&none 		&none		&kp M 		&kp LC(X)
-				&none          	&none		&kp V     	&none	
+				&none 		&none		&none 		&kp LC(X)
+				&none          	&none		&none     	&none	
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -68,8 +68,8 @@
 
 		rhino_layer {
 			bindings = <
-						&kp LG(Y)	&kp LC(U)	&kp LC(0)	
-				&none	 	&kp LG(Z)  	&kp LC(T)	&none	
+						&kp LC(Y)	&kp LC(U)	&kp LC(0)	
+				&none	 	&kp LC(Z)  	&kp LC(T)	&none	
 				&none 		&kp LC(E)	&kp LC(M)	&kp LALT	
 				&none 		&kp LC(J)	&kp LC(LA(E))	&kp LSHFT
 				&none          	&lt SWITCH ESC	&kp LC(P)     	&mo RHIN

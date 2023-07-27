@@ -13,12 +13,11 @@
 	status = "okay";
 };
 
-#define SWITCH 0
-#define PROC 1
-#define AFFINITY 2
-#define AFFIN 3
-#define RHINO 4
-#define RHIN 5
+#define PROC 0
+#define AFFINITY 1
+#define AFFIN 2
+#define RHINO 3
+#define RHIN 4
 
 #define NONE 0
 
@@ -31,25 +30,13 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		switch_layer {
-			bindings = <
-						&none	 	&none 		&none
-				&none	 	&to 4 		&none 		&none
-				&none 		&to 2		&none		&none
-				&none 		&to 1		&none		&none
-				&none          	&lt SWITCH	&none     	&none
-			>;
-
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
-		};
-
 		proc_layer {
 			bindings = <
 						&kp LS(LG(Z)) 	&kp E 		&kp LALT
 				&none	 	&kp LG(Z)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
 				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
-				&none          	&lt SWITCH	&kp V     	&kp LCMD
+				&none          	&to 1		&kp V     	&kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -61,7 +48,7 @@
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
-				&none          	&lt SWITCH	&none    	&mo AFFIN
+				&none          	&to 3		&none    	&mo AFFIN
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -84,7 +71,7 @@
 				&none	 	&kp LG(Z)  	&kp LC(T)	&none	
 				&none 		&kp LC(E)	&kp LC(M)	&kp LALT	
 				&none 		&kp LC(J)	&kp LC(LA(E))	&kp LSHFT
-				&none          	&lt SWITCH ESC	&kp LC(P)     	&mo RHIN
+				&none          	&to 0		&kp LC(P)     	&mo RHIN
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;

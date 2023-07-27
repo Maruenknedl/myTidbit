@@ -39,7 +39,6 @@
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
-		
 		affin_layer {
 			bindings = <
 						&kp LS(LG(Z))  	&kp E 		&kp I
@@ -51,19 +50,16 @@
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
-
-
 		rhino_layer {
 			bindings = <
-						&kp LG(Y)	&LC(U)		&LC(0)	
-				&none	 	&kp LG(Z)  	&LC(T)		&none	
-				&none 		&LC(E)		&LC(M)		&kp LALT	
-				&none 		&LC(J)	 	&LC(LA(E))	&kp LSHFT
-				&none          	&kp ESC		&LC(P)     	&none
+						&kp LG(Y)	&kp LC(U)	&kp LC(0)	
+				&none	 	&kp LG(Z)  	&kp LC(T)	&none	
+				&none 		&kp LC(E)	&kp LC(M)	&kp LALT	
+				&none 		&kp LC(J)	&kp LC(LA(E))	&kp LSHFT
+				&none          	&kp ESC		&kp LC(P)     	&none
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
-		
 	};
 };

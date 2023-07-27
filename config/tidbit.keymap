@@ -16,7 +16,6 @@
 #define PROC 0
 #define AFFIN 1
 #define RHINO 2
-#define AFFINI 3
 
 #define NONE 0
 
@@ -47,7 +46,7 @@
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
-				&none          	&to 0 		&lt AFFINI  V   &kp LCMD
+				&none          	&to 0 		&none		&kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
@@ -61,17 +60,6 @@
 				&none 		&LC(E)		&LC(M)		&kp LALT	
 				&none 		&LC(J)	 	&LC(LA(E))	&kp LSHFT
 				&none          	&kp ESC		&LC(P)     	&none
-			>;
-
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
-		};
-		affini_layer {
-			bindings = <
-						&none	  	&kp LS(LG(Z)) 	&kp I
-				&none	 	&none	 	&kp LG(Z) 	&kp LG(SEMICOLON)
-				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
-				&none 		&kp T		&kp A		&none
-				&none          	&kp M 		&kp V     	&kp LCMD
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;

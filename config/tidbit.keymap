@@ -44,7 +44,7 @@
 				&none          	&lt SWITCH ESC	&kp V     	&kp LCMD
 			>;
 
-			sensor-bindings = <&inc_dec_kp Ö Ä>;
+			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
 		
 		affinity_layer {

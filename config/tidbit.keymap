@@ -44,7 +44,7 @@
 				&none          	&lt SWITCH ESC	&kp V    	&mo AFFIN
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp PERIOD COMMA>;
 		};
 		affin_layer {
 			bindings = <
@@ -55,7 +55,7 @@
 				&none          	&kp ESC		&none     	&none	
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp PERIOD COMMA>;
 		};
 		affinitypc_layer {
 			bindings = <
@@ -66,7 +66,7 @@
 				&none          	&lt SWITCH ESC	&kp V    	&mo AFFINPC
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp PERIOD COMMA>;
 		};
 		affinpc_layer {
 			bindings = <
@@ -77,7 +77,7 @@
 				&none          	&kp ESC		&none     	&none	
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp PERIOD COMMA>;
 		};
 		proc_layer {
 			bindings = <
@@ -110,7 +110,7 @@
 				&none          	&kp ESC		&kp LC(LS(A))   &none	
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp LC(Z) LC(Y)>;
 		};
 		blender_layer {
 			bindings = <
@@ -132,7 +132,7 @@
 				&none          	&kp ESC		&none		&none	
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp LC(Z) LC(Y)>;
 		};
 		switch_layer {
 			bindings = <

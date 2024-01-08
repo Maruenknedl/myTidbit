@@ -13,11 +13,11 @@
 	status = "okay";
 };
 
-#define PROC 0
-#define AFFINITY 1
-#define AFFIN 2
-#define AFFINITYPC 3
-#define AFFINPC 4
+#define AFFINITY 0
+#define AFFIN 1
+#define AFFINITYPC 2
+#define AFFINPC 3
+#define PROC 4
 #define RHINO 5
 #define RHIN 6
 #define BLENDER 7
@@ -35,21 +35,9 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		proc_layer {
-			bindings = <
-						&kp LS(LG(Z)) &kp E 		&kp M
-				&none	 	&kp LG(Z)  	&kp B 		&kp X
-				&none 		&kp L 		&kp SPACE	&kp C
-				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
-				&none          	&lt SWITCH ESC	&kp V     	&kp LCMD
-			>;
-
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
-		};
-		
 		affinity_layer {
 			bindings = <
-						&kp LS(LG(Z)) &kp E 		&kp I
+						&kp LS(LG(Z))	&kp E 		&kp I
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
@@ -71,9 +59,9 @@
 		};
 		affinitypc_layer {
 			bindings = <
-						&kp LS(LC(Z))  	&kp E 		&kp I
-				&none	 	&kp LC(Z) 	&kp B 		&kp LC(SEMICOLON)
-				&none 		&none 		&kp P		&kp LC(APOSTROPHE)
+						&kp LS(LC(Y))  	&kp E 		&kp I
+				&none	 	&kp LC(Y) 	&kp B 		&kp LG(SEMICOLON)
+				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
 				&none          	&lt SWITCH ESC	&kp V    	&mo AFFINPC
 			>;
@@ -90,6 +78,17 @@
 			>;
 
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+		};
+		proc_layer {
+			bindings = <
+						&kp LS(LG(Z))	&kp E 		&kp M
+				&none	 	&kp LG(Z)  	&kp B 		&kp X
+				&none 		&kp L 		&kp SPACE	&kp C
+				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
+				&none          	&lt SWITCH ESC	&kp V     	&kp LCMD
+			>;
+
+			sensor-bindings = <&inc_dec_kp Ö Ä>;
 		};
 		rhino_layer {
 			bindings = <
@@ -139,8 +138,8 @@
 			bindings = <
 						&none		&none	 	&none	 	
 				&none	 	&none	 	&to 7	 	&none	 	
-				&none 		&to 0	 	&to 5	 	&none	 	
-				&none 		&to 1	 	&to 3 		&none	 	
+				&none 		&to 4	 	&to 5	 	&none	 	
+				&none 		&to 0	 	&to 2 		&none	 	
 				&none          	&lt SWITCH ESC	&none	 	&none	
 			>;
 

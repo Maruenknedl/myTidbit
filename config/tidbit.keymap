@@ -37,21 +37,21 @@
 
 		proc_layer {
 			bindings = <
-						&kp LS(LCMD(Z)) &kp E 		&kp M
-				&none	 	&kp LCMD(Z)  	&kp B 		&kp X
+						&kp LS(LG(Z)) &kp E 		&kp M
+				&none	 	&kp LG(Z)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
-				&none 		&kp LCMD(BSPC) 	&kp S		&kp LCMD(U)
+				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
 				&none          	&lt SWITCH ESC	&kp V     	&kp LCMD
 			>;
 
-			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
+			sensor-bindings = <&inc_dec_kp Ö Ä>;
 		};
 		
 		affinity_layer {
 			bindings = <
-						&kp LS(LCMD(Z)) &kp E 		&kp I
-				&none	 	&kp LCMD(Z) 	&kp B 		&kp LCMD(SEMICOLON)
-				&none 		&none 		&kp P		&kp LCMD(APOSTROPHE)
+						&kp LS(LG(Z)) &kp E 		&kp I
+				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
+				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
 				&none          	&lt SWITCH ESC	&kp V    	&mo AFFIN
 			>;
@@ -60,10 +60,10 @@
 		};
 		affin_layer {
 			bindings = <
-						&none	  	&none	 	&kp LCMD(J)
-				&none	 	&none	 	&none		&kp LCMD(V)
-				&none 		&none 		&none		&kp LCMD(C)
-				&none 		&none		&none 		&kp LCMD(X)
+						&none	  	&none	 	&kp LG(J)
+				&none	 	&none	 	&none		&kp LG(V)
+				&none 		&none 		&none		&kp LG(C)
+				&none 		&none		&none 		&kp LG(X)
 				&none          	&kp ESC		&none     	&none	
 			>;
 

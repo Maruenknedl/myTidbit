@@ -81,10 +81,10 @@
 		};
 		proc_layer {
 			bindings = <
-						&kp LS(LCMD(Z))	&kp E 		&kp M
-				&none	 	&kp LCMD(Z)  	&kp B 		&kp X
+						&kp LG(LS(Z))	&kp E 		&kp M
+				&none	 	&kp LG(Z)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
-				&none 		&kp LG(BSPC) 	&kp S		&kp LCMD(U)
+				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
 				&none          	&lt SWITCH ESC	&kp V     	&kp LCMD
 			>;
 

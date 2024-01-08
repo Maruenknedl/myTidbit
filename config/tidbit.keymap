@@ -37,7 +37,7 @@
 
 		affinity_layer {
 			bindings = <
-						&kp LS(LG(Z))	&kp E 		&kp I
+						&kp LG(LS(Z))	&kp E 		&kp I
 				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
@@ -59,7 +59,7 @@
 		};
 		affinitypc_layer {
 			bindings = <
-						&kp LS(LC(Y))  	&kp E 		&kp I
+						&kp LC(LS(Y))  	&kp E 		&kp I
 				&none	 	&kp LC(Y) 	&kp B 		&kp LG(SEMICOLON)
 				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
 				&none 		&kp T		&kp A		&none

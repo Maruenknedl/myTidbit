@@ -48,8 +48,8 @@
 		};
 		affin_layer {
 			bindings = <
-						&kp LC(LS(Z))  	&none	 	&kp LG(J)
-				&none	 	&kp LC(Z)  	&none		&kp LG(V)
+						&none	  	&none	 	&kp LG(J)
+				&none	 	&none	 	&none		&kp LG(V)
 				&none 		&none 		&none		&kp LG(C)
 				&none 		&none		&none 		&kp LG(X)
 				&none          	&kp ESC		&none     	&none	
@@ -81,8 +81,8 @@
 		};
 		proc_layer {
 			bindings = <
-						&kp LG(LS(Z))	&kp E 		&kp M
-				&none	 	&kp LG(Z)  	&kp B 		&kp X
+						&kp LG(LS(Y))	&kp E 		&kp M
+				&none	 	&kp LG(Y)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
 				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
 				&none          	&lt SWITCH ESC	&kp V     	&kp LCMD

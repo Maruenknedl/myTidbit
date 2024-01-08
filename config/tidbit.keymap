@@ -35,10 +35,10 @@
 
 		proc_layer {
 			bindings = <
-						&kp LS(LG(Z)) 	&kp E 		&kp LALT
-				&none	 	&kp LG(Z)  	&kp B 		&kp X
+						&kp LS(LC(Z)) 	&kp E 		&kp LALT
+				&none	 	&kp LC(Z)  	&kp B 		&kp X
 				&none 		&kp L 		&kp SPACE	&kp C
-				&none 		&kp LG(BSPC) 	&kp S		&kp LG(U)
+				&none 		&kp LC(BSPC) 	&kp S		&kp LC(U)
 				&none          	&lt SWITCH ESC	&kp V     	&kp LCMD
 			>;
 
@@ -47,9 +47,9 @@
 		
 		affinity_layer {
 			bindings = <
-						&kp LS(LG(Z))  	&kp E 		&kp I
-				&none	 	&kp LG(Z) 	&kp B 		&kp LG(SEMICOLON)
-				&none 		&none 		&kp P		&kp LG(APOSTROPHE)
+						&kp LS(LC(Z))  	&kp E 		&kp I
+				&none	 	&kp LC(Z) 	&kp B 		&kp LC(SEMICOLON)
+				&none 		&none 		&kp P		&kp LC(APOSTROPHE)
 				&none 		&kp T		&kp A		&none
 				&none          	&lt SWITCH ESC	&kp V    	&mo AFFIN
 			>;
